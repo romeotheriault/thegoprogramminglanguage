@@ -41,3 +41,13 @@ func PopCount(x uint64) int {
 	return int(count)
 }
 */
+
+// 2.5 - x&(x-1) removes the right most 1
+/*
+func PopCount(x uint64) int {
+	var count int
+	for ; x > 0; x, count = x&(x-1), count+1 {
+	}
+	return count
+}
+*/
